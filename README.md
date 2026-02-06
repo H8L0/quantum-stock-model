@@ -10,7 +10,7 @@ The goal is to test whether a physics-inspired probabilistic model can capture t
 ---
 
 ## Data
-- Asset: S&P 500 index (^GSPC)
+- Assets: S&P 500 index (^GSPC), NVIDIA (^NVDA)
 - Source: Yahoo Finance (via `yfinance`)
 - Time period:
   - Training: 2023
@@ -75,4 +75,27 @@ Quantum-inspired models may offer a flexible alternative to traditional Gaussian
 
 ---
 
-## Repository Structure
+## Files
+- `qho_model.py` – main model script
+- `research_paper.pdf` – full research writeup
+- `requirements.txt` – Python dependencies
+
+---
+
+## How to Run
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+Run the model:
+```
+python qho_model.py
+```
+---
+
+## Future Improvements
+- Add formal goodness-of-fit metrics (KL divergence, KS test)
+- Test across a larger universe of assets
+- Compare against Gaussian and GARCH models
+- Calibrate time-scaling parameters using empirical data
